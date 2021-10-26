@@ -1,0 +1,7 @@
+Lex.lexer module
+================
+
+.. automodule:: Lex.lexer
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+Lex.parser module
+=================
+
+.. automodule:: Lex.parser
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+Lex.constants module
+====================
+
+.. automodule:: Lex.constants
+   :members:
+   :undoc-members:
+   :show-inheritance:

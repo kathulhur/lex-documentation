@@ -1,0 +1,7 @@
+Lex.nodes module
+================
+
+.. automodule:: Lex.nodes
+   :members:
+   :undoc-members:
+   :show-inheritance:

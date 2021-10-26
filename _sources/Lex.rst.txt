@@ -1,0 +1,25 @@
+Lex package
+===========
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   Lex.constants
+   Lex.errors
+   Lex.lexer
+   Lex.nodes
+   Lex.parser
+   Lex.position
+   Lex.tokens
+   Lex.utils
+
+Module contents
+---------------
+
+.. automodule:: Lex
+   :members:
+   :undoc-members:
+   :show-inheritance:

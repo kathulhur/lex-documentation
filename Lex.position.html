@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Lex.position module &#8212; ProjectLex 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Lex.tokens module" href="Lex.tokens.html" />
+    <link rel="prev" title="Lex.parser module" href="Lex.parser.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Lex.tokens.html" title="Lex.tokens module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Lex.parser.html" title="Lex.parser module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjectLex 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="Lex.html" accesskey="U">Lex package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Lex.position module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-Lex.position">
+<span id="lex-position-module"></span><h1>Lex.position module<a class="headerlink" href="#module-Lex.position" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Lex.position.Position">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Lex.position.</span></span><span class="sig-name descname"><span class="pre">Position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ln</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftxt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Lex.position.Position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class that encapsulates the positioning of the lexical analyzer to the given string of characters</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Lex.position.Position.idx">
+<span class="sig-name descname"><span class="pre">idx</span></span><a class="headerlink" href="#Lex.position.Position.idx" title="Permalink to this definition">¶</a></dt>
+<dd><p>the index in the ftxt</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Lex.position.Position.ln">
+<span class="sig-name descname"><span class="pre">ln</span></span><a class="headerlink" href="#Lex.position.Position.ln" title="Permalink to this definition">¶</a></dt>
+<dd><p>the line number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Lex.position.Position.col">
+<span class="sig-name descname"><span class="pre">col</span></span><a class="headerlink" href="#Lex.position.Position.col" title="Permalink to this definition">¶</a></dt>
+<dd><p>the column number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Lex.position.Position.fn">
+<span class="sig-name descname"><span class="pre">fn</span></span><a class="headerlink" href="#Lex.position.Position.fn" title="Permalink to this definition">¶</a></dt>
+<dd><p>filename</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Lex.position.Position.ftxt">
+<span class="sig-name descname"><span class="pre">ftxt</span></span><a class="headerlink" href="#Lex.position.Position.ftxt" title="Permalink to this definition">¶</a></dt>
+<dd><p>the string of characters from the file named <a class="reference internal" href="#Lex.position.Position.fn" title="Lex.position.Position.fn"><code class="xref py py-attr docutils literal notranslate"><span class="pre">fn</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Lex.position.Position.advance">
+<span class="sig-name descname"><span class="pre">advance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">current_character</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Lex.position.Position.advance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increment the index (<a class="reference internal" href="#Lex.position.Position.idx" title="Lex.position.Position.idx"><code class="xref py py-attr docutils literal notranslate"><span class="pre">idx</span></code></a>) by 1</p>
+<p>Increments the <a class="reference internal" href="#Lex.position.Position.ln" title="Lex.position.Position.ln"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ln</span></code></a> and resets the <a class="reference internal" href="#Lex.position.Position.col" title="Lex.position.Position.col"><code class="xref py py-attr docutils literal notranslate"><span class="pre">col</span></code></a> to 0 if it encounters the new line character</p>
+<dl class="simple">
+<dt>Params:</dt><dd><p>current_character(:obj:char): The current character in the <a class="reference internal" href="#Lex.position.Position.ftxt" title="Lex.position.Position.ftxt"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ftxt</span></code></a> in the index <a class="reference internal" href="#Lex.position.Position.idx" title="Lex.position.Position.idx"><code class="xref py py-attr docutils literal notranslate"><span class="pre">idx</span></code></a> (Position.ftxt[idx]);</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Lex.position.Position.copy">
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Lex.position.Position.copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new <a class="reference internal" href="#Lex.position.Position" title="Lex.position.Position"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Position</span></code></a> object identical to the calling instance</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Lex.parser.html"
+                        title="previous chapter">Lex.parser module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Lex.tokens.html"
+                        title="next chapter">Lex.tokens module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Lex.position.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Lex.tokens.html" title="Lex.tokens module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Lex.parser.html" title="Lex.parser module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjectLex 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="Lex.html" >Lex package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Lex.position module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Joseph, Jirro, Ian.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>

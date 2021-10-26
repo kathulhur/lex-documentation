@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Lex.errors module &#8212; ProjectLex 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Lex.lexer module" href="Lex.lexer.html" />
+    <link rel="prev" title="Lex.constants module" href="Lex.constants.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Lex.lexer.html" title="Lex.lexer module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Lex.constants.html" title="Lex.constants module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjectLex 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="Lex.html" accesskey="U">Lex package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Lex.errors module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-Lex.errors">
+<span id="lex-errors-module"></span><h1>Lex.errors module<a class="headerlink" href="#module-Lex.errors" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Lex.errors.Error">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Lex.errors.</span></span><span class="sig-name descname"><span class="pre">Error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos_end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Lex.errors.Error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The base error class</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Lex.errors.Error.pos_start">
+<span class="sig-name descname"><span class="pre">pos_start</span></span><a class="headerlink" href="#Lex.errors.Error.pos_start" title="Permalink to this definition">¶</a></dt>
+<dd><p>the starting position of the error in the text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Lex.errors.Error.pos_end">
+<span class="sig-name descname"><span class="pre">pos_end</span></span><a class="headerlink" href="#Lex.errors.Error.pos_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>the end position of the error in the text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Lex.errors.Error.error_name">
+<span class="sig-name descname"><span class="pre">error_name</span></span><a class="headerlink" href="#Lex.errors.Error.error_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>name of the error</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Lex.errors.Error.details">
+<span class="sig-name descname"><span class="pre">details</span></span><a class="headerlink" href="#Lex.errors.Error.details" title="Permalink to this definition">¶</a></dt>
+<dd><p>details of the error</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Lex.errors.IllegalCharacterError">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Lex.errors.</span></span><span class="sig-name descname"><span class="pre">IllegalCharacterError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos_end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Lex.errors.IllegalCharacterError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Lex.errors.Error" title="Lex.errors.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">Lex.errors.Error</span></code></a></p>
+<p>Error object for illegal character</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Lex.errors.InvalidSyntaxError">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Lex.errors.</span></span><span class="sig-name descname"><span class="pre">InvalidSyntaxError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos_end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Lex.errors.InvalidSyntaxError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Lex.errors.Error" title="Lex.errors.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">Lex.errors.Error</span></code></a></p>
+<p>Error object for invalid syntax</p>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Lex.constants.html"
+                        title="previous chapter">Lex.constants module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Lex.lexer.html"
+                        title="next chapter">Lex.lexer module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Lex.errors.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Lex.lexer.html" title="Lex.lexer module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Lex.constants.html" title="Lex.constants module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjectLex 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="Lex.html" >Lex package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Lex.errors module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Joseph, Jirro, Ian.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>

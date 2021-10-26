@@ -1,0 +1,7 @@
+Lex.errors module
+=================
+
+.. automodule:: Lex.errors
+   :members:
+   :undoc-members:
+   :show-inheritance:
